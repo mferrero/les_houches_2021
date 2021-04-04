@@ -84,7 +84,7 @@ ENV CMAKE_PREFIX_PATH=/usr/lib/cmake/triqs \
 
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
-WORKDIR /home/$NB_USER
+WORKDIR /home/$NB_USER/tutorial
 
 EXPOSE 8888
 CMD ["jupyter","notebook","--ip","0.0.0.0"]
