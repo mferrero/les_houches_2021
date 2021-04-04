@@ -73,7 +73,7 @@ RUN set -ex ; \
     cd ../.. ; \
   done ; \
   mkdir -p ctint; cd ctint; \
-  git clone https://github.com/mferrero/les_houches.git src ; \
+  git clone https://github.com/mferrero/ctint.git src ; \
   mkdir -p build ; cd build ; \
   cmake ../src -DCMAKE_INSTALL_PREFIX=$INSTALL ; \
   make -j$NCORES ; \
